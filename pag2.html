@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=tit, initial-scale=1.0">
+    <title>Tabelas e Inputs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="nav-barra">
+        <ul class="ul-navbarra">
+            <li class="li-navbarra">
+                <a href="pag.html">
+                    <img src="uniube.png" alt="Início" class="img-inicio">
+                </a>
+            </li>
+            <li><a class="a-navbarra" href="pag1.html">Pag1</a></li>
+            <li><a class="a-navbarra" href="pag2.html">Pag2</a></li>
+            <li><a class="a-navbarra" href="pag3.html">Pag3</a></li>
+            <li><a class="a-navbarra" href="pag4.html">Pag4</a></li>
+        </ul>
+    </nav>
+   
+
+    <p>EX1 Dada a tabela abaixo monte todo o codigo HTML que a representa :</p>
+
+    <table border="1">
+        <tr>
+            <th align="center">A</th>
+            <td colspan="2" align="center">B</td>
+        </tr>
+        <tr align="center">
+            <th rowspan="2">C</th>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+        <tr align="center">
+            <td>F</td>
+            <td>G</td>
+        </tr>
+        <tr align="center">
+            <th rowspan="2">H</th>
+            <td>I</td>
+            <td>J</td>
+        </tr>
+    </table>
+
+    <p>EX2 Monte a seguinte estrutura:</p>
+    <p>
+        Texto Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Repudiandae molestias, reiciendis magni vel esse cumque soluta <br>
+        consequatur mollitia eum est adipisci delectus beatae aliquam  <br>
+        quas tenetur vero?
+    </p>
+
+    <p>
+        <input type="radio" id="opcao1" name="opcao" value="opcao1">
+        <label for="opcao1">Item 1</label>
+        <br>
+        <input type="radio" id="opcao2" name="opcao" value="opcao2">
+        <label for="opcao2">Item 2</label>
+        <br>
+        <input type="radio" id="opcao3" name="opcao" value="opcao3">
+        <label for="opcao3">Item 3</label>
+        <br>
+        <input type="radio" id="opcao4" name="opcao" value="opcao4">
+        <label for="opcao4">Item 4</label>
+    </p>
+
+    <p>EX3 Construa o seguinte formulario:</p>
+    <form>  
+        <table>
+            <tr>
+                <td><label for="nome">Nome:</label></td>
+                <td><input type="text" name="nome"></td>
+            </tr>
+            <tr>
+                <td><label for="idade">Idade:</label></td>
+                <td><input type="text" name="idade"></td>
+            </tr>
+            <tr>
+                <td><label for="endereço">Endereço:</label></td>
+                <td><input type="text" name="endereço"></td>
+            </tr>
+            <tr>
+                <td><label for="curso">Curso:</label></td>
+                <td><input type="text" name="curso"></td>
+            </tr>
+        </table>
+        <br>
+        <p>Conhecimentos:</p>
+        <table>
+            <tr>
+                <td><h3>HTML &nbsp;&nbsp;</h3></td>
+                <td>
+                    <label for="baixo_html">Baixo&nbsp;&nbsp;</label><br>
+                    &nbsp;&nbsp;<input type="radio" id="baixo_html" name="html" value="baixo">
+                </td>
+                <td>
+                    <label for="medio_html">Médio&nbsp;&nbsp;</label><br>
+                    &nbsp;
+                    <input type="radio" id="medio_html" name="html" value="medio">
+                </td>
+                <td>
+                    <label for="alto_html">Alto&nbsp;&nbsp;</label><br>
+                    &nbsp;<input type="radio" id="alto_html" name="html" value="alto">
+                </td>
+            </tr>
+            <tr>
+                <td><h3>PHP</h3></td>
+                <td>
+                    <label for="baixo_php">Baixo</label><br>
+                    &nbsp;&nbsp;<input type="radio" id="baixo_php" name="php" value="baixo">
+                </td>
+                <td>
+                    <label for="medio_php">Médio</label><br>
+                    &nbsp;<input type="radio" id="medio_php" name="php" value="medio">
+                </td>
+                <td>
+                    <label for="alto_php">Alto</label><br>
+                    &nbsp;<input type="radio" id="alto_php" name="php" value="alto">
+                </td>
+            </tr>
+            <tr>
+                <td><h3>PYTHON &nbsp;&nbsp;</h3></td>
+                <td>
+                    <label for="baixo_html">Baixo&nbsp;&nbsp;</label><br>
+                    &nbsp;&nbsp;<input type="radio" id="baixo_html" name="html" value="baixo">
+                </td>
+                <td>
+                    <label for="medio_html">Médio&nbsp;&nbsp;</label><br>
+                    &nbsp;<input type="radio" id="medio_html" name="html" value="medio">
+                </td>
+                <td>
+                    <label for="alto_html">Alto&nbsp;&nbsp;</label><br>
+                    &nbsp;<input type="radio" id="alto_html" name="html" value="alto">
+                </td>
+            </tr>
+            <tr>
+                <td><h3>JAVA &nbsp;&nbsp;</h3></td>
+                <td>
+                    <label for="baixo_html">Baixo&nbsp;&nbsp;</label><br>
+                    &nbsp;&nbsp;<input type="radio" id="baixo_html" name="html" value="baixo">
+                </td>
+                <td>
+                    <label for="medio_html">Médio&nbsp;&nbsp;</label><br>
+                    &nbsp;<input type="radio" id="medio_html" name="html" value="medio">
+                </td>
+                <td>
+                    <label for="alto_html">Alto&nbsp;&nbsp;</label><br>
+                    &nbsp;<input type="radio" id="alto_html" name="html" value="alto">
+                </td>
+            </tr>
+            
+        </table>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;
+            <input type = "submit" name = "submit" value = "Enviar" />
+          </p>
+    </form>  
+
+</body>
+</html>

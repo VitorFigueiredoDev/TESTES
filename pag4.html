@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav-barra">
+        <ul class="ul-navbarra">
+            <li class="li-navbarra">
+                <a href="pag.html">
+                    <img src="uniube.png" alt="Início" class="img-inicio">
+                </a>
+            </li>
+            <li><a class="a-navbarra" href="pag1.html">Pag1</a></li>
+            <li><a class="a-navbarra" href="pag2.html">Pag2</a></li>
+            <li><a class="a-navbarra" href="pag3.html">Pag3</a></li>
+            <li><a class="a-navbarra" href="pag4.html">Pag4</a></li>
+        </ul>
+    </nav>
+    
+<br>
+<hr>
+<br>
+
+<form>
+    <table border="1" cellpadding="10px" align="center">
+       <tr>
+          <td width ="100"><label>Nome:</label></td>
+          <td width="100"><input type="text" name="Nome" size="30"></td>
+       </tr>
+       <tr>
+        <td><label>Sexo:</label></td>
+        <td>
+            <input type="radio" name="sexo" value="masculino">Masculino
+            <input type="radio" name="sexo" value="feminino">Feminino
+        </td>
+       </tr>
+       <tr>
+        <td colspan="2">
+            <label>Escolariedade</label>
+            <select name="Escolariedade">
+                <option value="0" selected>selecione</option>
+                <option value="1">1º grau</option>
+                <option value="2">2º grau</option>
+                <option value="3">superior</option>
+            </select>
+        </td>
+       </tr>
+    </table>
+</form>
+
+<br>
+<hr>
+<br>
+
+<form>
+    <table border="1" cellpadding="10px" wegth="400" align="center">
+        <tr>
+            <td><label>Número</label></td>
+            <td><input type="text" name="Numero" size="30"></td>   
+        </tr>
+        <tr>
+            <td><label>Bandeiras</label></td>
+            <td>
+                <table cellpadding="5px" align="left">
+                    <tr>
+                         <td><input type="radio" name="bandeira" value="visa"></td>
+                         <td><img src="VISA.png" width="50"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="bandeira" value="master"></td>
+                        <td><img src="mastercard.png" width="50"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="bandeira" value="amex"></td>
+                        <td><img src="American_Express.png" width="50"></td>
+                    </tr>            
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Validade</label></td>
+            <td>
+                <select name="Escolariedade">
+                    <option value="0" selected>2012</option>
+                    <option value="1">2013</option>
+                    <option value="2">2014</option>
+                    <option value="3">2015</option>
+                </select>
+            </td>
+        </tr>
+     </table>
+</form>
+
+<br>
+<hr>
+<br>
+
+<form >
+    <div style="display: flex; justify-content: center;">
+    <fieldset style="width: 200px;">
+        <legend>Informações do Aquário</legend>
+        <br>
+        <label for=""><b>Ph do Aquário:</b></label><br>
+        <input type="radio" name="PH" value="Ácido">Ácido
+        <input type="radio" name="PH" value="Alcalino">Alcalino
+        <br><br>
+
+        <fieldset>
+            <legend>Peixes</legend>
+            <br>
+            <label><b>Quantidade</b></label>
+            <input type="text" name="Quantidade" size="2">
+            <br><br>
+            <label for=""><b>Espécie:</b> </label>
+            <select name="Espécie">
+                <option value="0" selected>Espada</option>
+                <option value="1">Molinésia</option>
+                <option value="2">Plati</option>
+            </select>
+            <br><br>
+        </fieldset>
+    <br>
+        <label for="outros"><b>Outros:</b></label><br>
+        <input type="checkbox" id="pedras" name="pedras">
+        <label for="pedras"><b>pedras</b></label><br>
+
+        <input type="checkbox" id="plantas" name="plantas">
+        <label for="plantas"><b>plantas</b></label>
+        <br><br>
+    </fieldset>
+</div>
+</form>
+
+<br>
+<hr>
+<br>
+
+<form action="">
+    <h1 align="center">Escola Virtual</h1>
+    <h3 align="center">Formulário de Pré-Matrícula</h3>
+    <hr>
+
+    <table border="1" cellpadding="10px" align="center" >
+        <tr>
+            <td>
+                <table border="0" style="align-items: center;">
+             
+                
+                <label for=""><b>Dados Pessoais:</b></label><br>
+
+
+                <div style="margin-left: 73px;"  >
+                    <div style="margin-bottom: 5px;">
+                <label for="nome_aluno">Nome do Aluno:</label>
+                <input type="text" id="nome_aluno" name="nome_aluno" maxlength="40" required><br>
+            </div>
+            <div style="margin-bottom: 5px;">
+
+                <label for="data_nascimento">Nascimento (dd/mm/aaaa):</label>
+                <input type="text" id="data_nascimento" name="data_nascimento" size="1">/
+                <input type="text" id="data_nascimento" name="data_nascimento" size="1">/
+                <input type="text" id="data_nascimento" name="data_nascimento" size="2"><br>
+            </div>
+            <div style="margin-bottom: 5px;">
+                <label for="nome_mae">Nome da Mãe:</label>
+                <input type="text" id="nome_mae" name="nome_mae" maxlength="40" required><br>
+            </div>
+            <div style="margin-bottom: 5px;">
+                <label for="nome_pai">Nome do Pai:</label>
+                <input type="text" id="nome_pai" name="nome_pai" maxlength="40" required><br>
+            </div>
+            </div>
+
+            <div style="margin-left: 73px;">
+            <div style="margin-bottom: 5px;">
+                <label for="data_nascimento">Telefone: DDD</label>
+                (<input type="text" id="data_nascimento" name="data_nascimento" size="1">)
+                Tel:<input type="text" id="data_nascimento" name="data_nascimento" size="1">
+                Ramal:<input type="text" id="data_nascimento" name="data_nascimento" size="2"><br>
+            </div>
+        </div>
+
+            <div style="margin-left: 73px;">
+            <div style="margin-bottom: 5px;">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" maxlength="40" required><br>
+            </div>
+                </div>
+            </div>
+
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <table border="0" style="width: 500px;">  
+               <td> <label for="serie">Série:</label><br>
+                    <select id="serie" name="serie">
+                        <option value="pre_escolar">Pré-Escolar</option>
+                        <option value="1a_serie">1ª Série</option>
+                        <option value="2a_serie">2ª Série</option>
+                        <option value="3a_serie">3ª Série</option>
+                    </select><br>
+                </td>
+                    <td>
+                <label>Turno Preferencial:</label><br>
+                    <input type="radio" id="manha" name="turno" value="manha" checked>
+                <label for="manha">Manhã</label><br>
+                    <input type="radio" id="tarde" name="turno" value="tarde">
+                <label for="tarde">Tarde</label><br>
+</td>
+<td>
+                <label>Atividades Extra-Curriculares:</label><br>
+
+                <input type="checkbox" id="informatica" name="atividades" value="informatica">
+                <label for="informatica">Informática</label><br>
+
+                <input type="checkbox" id="musica" name="atividades" value="musica">
+                <label for="musica">Música</label><br>
+
+                <input type="checkbox" id="ballet" name="atividades" value="ballet">
+                <label for="ballet">Ballet</label><br>
+
+                <input type="checkbox" id="pintura" name="atividades" value="pintura">
+                <label for="pintura">Pintura</label><br>
+
+                <input type="checkbox" id="judo" name="atividades" value="judo">
+                <label for="judo">Judô</label><br>
+
+                <input type="checkbox" id="futebol" name="atividades" value="futebol">
+                <label for="futebol">Futebol</label><br>
+            </td>
+        </table>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<br><br>
+
+<form align="center">
+
+
+    <input type="submit" value="Enviar Formulário">
+    <input type="submit" value="Limpar Campos">
+</form>
+<br>
+
+</body>
+</html>
