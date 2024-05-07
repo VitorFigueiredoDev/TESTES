@@ -1,213 +1,216 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+body{
+  background-color: rgb(255, 255, 255);
+  
+}
 .seasons-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-  }
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
   
-  .season-section {
-    position: relative;
-    width: calc(25% - 12px); /* 25% do espaço disponível menos o gap */
-    height: 350px;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    margin-top: 60px;
-  }
+}
+
+.season-section {
+  position: relative;
+  width: calc(25% - 12px); /* 25% do espaço disponível menos o gap */
+  height: 350px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  margin-top: 60px;
+  border: #04091f 4px solid;
   
-  .season-section.autumn {
-    background-color: rgb(54, 59, 109); /* cor do card 1 */
-  }
-  
-  .season-section.winter {
-    background-color: rgb(41, 44, 82); /* cor do card 2 */
-  }
-  
-  .season-section.spring {
-    background-color: rgb(27, 30, 55); /* cor do card 3 */
-  }
-  
-  .season-section.summer {
-    background-color: rgb(14, 15, 27); /* cor do card 4 */
-  }
-  
-  .season-section:hover .poster::before {
-    bottom: 0;
-  }
-  
-  .season-section:hover .poster img {
-    transform: scale(1.1);
-  }
-  
-  .section-content {
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    height: auto;
-    padding: 1.5em 1.5em 2em;
-    background: rgba(0, 0, 0, 0.667);
-    backdrop-filter: blur(16px) saturate(120%);
-    transition: .3s;
-    color: #fff;
-    z-index: 2;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .season-section:hover .section-content {
-    bottom: 0;
-  }
-  
-  .section-content h2 {
-    font-weight: 700;
-    font-size: 1.5em;
-    margin-bottom: 5px;
-  }
-  
-  .section-content p {
-    font-weight: 400;
-    font-size: 1em;
-    margin-bottom: 10px;
-    opacity: .6;
-  }
-  
-  .section-content p.desc {
-    opacity: .8;
-    line-height: 1.5;
-    margin-bottom: 1em;
-  }
-  
-  .section-content .rating {
-    margin-bottom: 15px;
-    display: flex;
-    gap: .25em;
-  }
-  
-  .section-content .rating i {
-    color: #e3c414;
-  }
-  
-  .section-content .rating span {
-    margin-left: 0.25em;
-  }
-  
-  .section-content .tags {
-    display: flex;
-    gap: .375em;
-    margin-bottom: .875em;
-    font-size: .85em;
-  }
-  
-  .section-content .tags span {
-    padding: .35rem .65rem;
-    color: #fff;
-    border: 1.5px solid rgba(255 255 255 / 0.4);
-    border-radius: 4px;
-    border-radius: 50px;
-  }
-  
-  .section-content .cast h3 {
-    margin-bottom: .5em;
-  }
-  
-  .section-content .cast ul {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.625rem;
-    width: 100%;
-  }
-  
-  .section-content .cast ul li {
-    list-style: none;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1.5px solid #fff;
-  }
-  
-  .section-content .cast ul li img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .imagempags{
-    background-size: cover;
+}
+
+.season-section.autumn {
+  background-color: rgb(0, 0, 0); /* cor do card 1 */
+}
+
+.season-section.winter {
+  background-color: rgb(0, 0, 0); /* cor do card 2 */
+}
+
+.season-section.spring {
+  background-color: rgb(0, 0, 0); /* cor do card 3 */
+}
+
+.season-section.summer {
+  background-color: rgb(0, 0, 0); /* cor do card 4 */
+}
+
+.season-section:hover .poster::before {
+  bottom: 0;
+}
+
+.season-section:hover .poster img {
+  transform: scale(1.1);
+}
+
+.section-content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.5em 1.5em 2em;
+  background: rgba(0, 0, 0, 0.667);
+  backdrop-filter: blur(16px) saturate(120%);
+  transition: .3s;
+  color: #fff;
+  z-index: 2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.season-section:hover .section-content {
+  bottom: 0;
+}
+
+.section-content h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.section-content p {
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 10px;
+  opacity: .6;
+}
+
+.section-content p.desc {
+  opacity: .8;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.section-content .rating {
+  margin-bottom: 15px;
+  display: flex;
+  gap: .25em;
+}
+
+.section-content .rating i {
+  color: #ffffff;
+}
+
+.section-content .rating span {
+  margin-left: 0.25em;
+}
+
+.section-content .tags {
+  display: flex;
+  gap: .375em;
+  margin-bottom: .875em;
+  font-size: .85em;
+}
+
+.section-content .tags span {
+  padding: .35rem .65rem;
+  color: #fff;
+  border: 1.5px solid rgba(255 255 255 / 0.4);
+  border-radius: 4px;
+  border-radius: 50px;
+}
+
+.section-content .cast h3 {
+  margin-bottom: .5em;
+}
+
+.section-content .cast ul {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  width: 100%;
+}
+
+.section-content .cast ul li {
+  list-style: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1.5px solid #fff;
+}
+
+.section-content .cast ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.imagempags {
+  background-size: cover;
   background-position: center;
   width: 100%;
   height: 100%;
-  }
+}
 
-
-
-
-
-  
-  .nav-barra {
-    background-color: #333;
-    padding: 10px; /* Adicionando um espaçamento interno */
-    font-family: 'Poppins', sans-serif; /* Aplicando a fonte Poppins */
+.nav-barra {
+  background-image: url("PRETO.jpg");
+  padding: 10px; /* Adicionando um espaçamento interno */
+  font-family: 'Poppins', sans-serif; /* Aplicando a fonte Poppins */
 }
 
 .ul-navbarra {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center; /* Centralizando os itens na barra de navegação */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centralizando os itens na barra de navegação */
 }
 
 .li-navbarra {
-    margin-right: 20px;
-    
+  margin-right: 20px;
 }
 
 .a-navbarra {
-    display: block;
-    padding: 15px 20px; /* 15px pra distancio vertical dos li na nav */
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s; /* Adicionando uma transição suave */
+  display: block;
+  padding: 15px 20px; /* 15px pra distancio vertical dos li na nav */
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Adicionando uma transição suave */
 }
 
 .a-navbarra:hover {
-    background-color: #555;
-    border-radius: 5px; /* Arredondando as bordas ao passar o mouse */
+  background-color: #555;
+  border-radius: 5px; /* Arredondando as bordas ao passar o mouse */
 }
 
 .li-navbarra:first-child {
-    margin-right: auto; /* Move o primeiro item para a esquerda */
+  margin-right: auto; /* Move o primeiro item para a esquerda */
 }
 
 .img-inicio {
-    height: 50px;
-    width: 50px;
-    transition: transform 0.3s; /* Adicionando uma transição suave para o efeito de zoom */
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s; /* Adicionando uma transição suave para o efeito de zoom */
 }
 
 .img-inicio:hover {
-    transform: scale(1.1); /* Aplicando o zoom ao passar o mouse */
+  transform: scale(1.1); /* Aplicando o zoom ao passar o mouse */
 }
 
-
-
 .nav-barrainicio {
-    background-color: #333;
-    padding: 10px; /* Adicionando um espaçamento interno */
-    font-family: 'Poppins', sans-serif; /* Aplicando a fonte Poppins */
-    display: flex;
-    justify-content: center; /* Centralizando o conteúdo horizontalmente */
+  background-image: url("PRETO.jpg");
+  padding: 10px; /* Adicionando um espaçamento interno */
+  font-family: 'Poppins', sans-serif; /* Aplicando a fonte Poppins */
+  display: flex;
+  justify-content: center; /* Centralizando o conteúdo horizontalmente */
 }
 
 .nav-textoinicio {
-    color: #fff;
-    font-size: 18px;
-    text-transform: uppercase; /* Transformando o texto em maiúsculas */
-    font-weight: bold;
-    text-decoration: none;
-    letter-spacing: 2px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase; /* Transformando o texto em maiúsculas */
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+
+.season-colortext{
+  color: #000000;
 }
